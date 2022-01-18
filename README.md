@@ -6,7 +6,7 @@ This project is a chat which use livewire plugin to make it real time chat.
 
 ## Project main functions
 
-1- MultipleAuthenticate (Admins - Moderators - Users)
+1- MultipleAuthenticate of tables (Admins - Moderators - Users)
 
 ## Laravel Sponsors
 
