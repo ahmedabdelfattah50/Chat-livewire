@@ -41,6 +41,19 @@ return [
             'provider' => 'users',
         ],
 
+        /* ======= add the admins and moderators guards
+            to link with tables from database ======= */
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'moderator' => [
+            'driver' => 'session',
+            'provider' => 'moderators',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -71,7 +84,20 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
+        /* ======= add the admins and moderators
+                   drivers to link with model ======= */
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        'moderators' => [
+            'driver' => 'eloquent',
+            'model' => App\Moderator::class,
+        ],
+        // 'users' =>
+        // [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
